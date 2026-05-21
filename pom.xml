@@ -17,32 +17,58 @@
   </properties>
 
   <dependencies>
-<!--    <dependency>-->
-<!--      <groupId>junit</groupId>-->
-<!--      <artifactId>junit</artifactId>-->
-<!--      <version>3.8.1</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.8.2</version>
-      <scope>test</scope> <!-- This dependency is only for tests -->
-    </dependency>
+    <!-- Selenium WebDriver -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.41.0</version>
-      <!-- No scope means it's needed for compilation and runtime (compile) -->
+      <version>4.15.0</version>
     </dependency>
-    <!-- Source: https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
+    <!-- Cucumber Java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.14.0</version>
+    </dependency>
+
+    <!-- Cucumber JUnit -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.14.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>6.3.3</version>
-      <scope>test</scope>
+      <version>5.6.2</version>
     </dependency>
-    <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+
+    <!-- SLF4J Simple Logger -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.9</version>
+    </dependency>
+
+    <!-- Apache Commons Lang -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.13.0</version>
+    </dependency>
+
+    <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
